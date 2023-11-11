@@ -10,16 +10,10 @@ choreonoid を docker で動かすために Dockerfile を記述しました
 $ docker build -t nopsan/choreonoid .
 ```
 
-## Run on Windows
+## Run on Linux or Win11 WSL
 
 ```bash
-
-```
-
-## Run on Linux
-
-```bash
-
+docker run --name choreonoid -e DISPLAY --net=host -v /tmp/.X11-unix:/tmp/.X11-unix -it nopsan/choreonoid bin/bash
 ```
 
 ## Run on Mac
