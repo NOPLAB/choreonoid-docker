@@ -19,6 +19,8 @@ docker run --name choreonoid -e DISPLAY=$(hostname):0 -v ~/.Xauthority:/root/.Xa
 # Build
 
 ```
+git clone https://github.com/NOPLAB/choreonoid-docker --recursive
+
 docker build -t nopsan/choreonoid .
 ```
 
