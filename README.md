@@ -7,13 +7,13 @@ DockerHub: https://hub.docker.com/r/nopsan/choreonoid
 # Run on Linux or Win11 WSL
 
 ```bash
-docker run --name choreonoid -e DISPLAY --net=host -v /tmp/.X11-unix:/tmp/.X11-unix -it nopsan/choreonoid bin/bash
+docker run --name choreonoid -e DISPLAY --net=host -v /tmp/.X11-unix:/tmp/.X11-unix -it nopsan/choreonoid
 ```
 
 # Run on Mac
 
 ```bash
-docker run --name choreonoid -e DISPLAY=$(hostname):0 -v ~/.Xauthority:/root/.Xauthority -it nopsan/choreonoid bin/bash
+docker run --name choreonoid -e DISPLAY=$(hostname):0 -v ~/.Xauthority:/root/.Xauthority -it nopsan/choreonoid
 ```
 
 # Build
