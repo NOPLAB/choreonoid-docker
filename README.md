@@ -13,12 +13,12 @@ docker run --name choreonoid -e DISPLAY --net=host -v /tmp/.X11-unix:/tmp/.X11-u
 # Run on Mac
 
 ```bash
-$ docker run --name choreonoid -e DISPLAY=$(hostname):0 -v ~/.Xauthority:/root/.Xauthority -it nopsan/choreonoid bin/bash
+docker run --name choreonoid -e DISPLAY=$(hostname):0 -v ~/.Xauthority:/root/.Xauthority -it nopsan/choreonoid bin/bash
 ```
 
 # Build
 
 ```
-$ docker build -t nopsan/choreonoid .
+docker build -t nopsan/choreonoid .
 ```
 
